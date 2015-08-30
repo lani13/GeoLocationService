@@ -44,15 +44,7 @@
        <service android:name="com.example.monitoring.service.CloudMessageContactsService"
                  android:process=":monitoring_service" />
        
-      <!-- <receiver android:name=".MonitoringReceiver" 
-                 android:process=":monitoring_service"
-                 android:enabled="true"
-                 android:exported="true">
-           <intent-filter>
-               <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
-           </intent-filter>
-       </receiver>  -->
-        
+             
         <receiver android:name="com.example.monitoring.service.MonitoringAlarmReceiver"
                  android:process=":monitoring_service">
         </receiver>  
@@ -80,23 +72,3 @@
 
 </manifest>
 
-
-
-<!--  <permission      
-    android:name="[MY PACKAGE NAME].permission.C2D_MESSAGE"      
-    android:protectionLevel="signature" />      
-<uses-permission android:name="[MY PACKAGE NAME].permission.C2D_MESSAGE" />   
-   
-<service android:name="[MY PACKAGE NAME].GCMIntentService" />   
-
-<receiver      
-        android:name="[MY PACKAGE NAME].GcmBroadcastReceiver"  
-        android:exported="true"      
-        android:permission="com.google.android.c2dm.permission.SEND" >      
-        <intent-filter>          
-            <action android:name="com.google.android.c2dm.intent.RECEIVE" />          
-            <action android:name="com.google.android.c2dm.intent.REGISTRATION" />          
-            <category android:name="[MY PACKAGE NAME]" />      
-        </intent-filter>  
-    </receiver>
--->
